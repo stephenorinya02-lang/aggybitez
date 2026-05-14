@@ -3,144 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AggyBitez | Small But Mighty | FUW</title>
+    <title>AggyBitez | Small But Mighty</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family= outfit:wght@400;700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
     <style>
-        body { font-family: 'Outfit', sans-serif; background-color: #f1f5f9; color: #1e293b; scroll-behavior: smooth; }
-        .text-royal { color: #002366; }
-        .bg-royal { background-color: #002366; }
-        .text-coral { color: #FF7F50; }
+        body { font-family: 'Outfit', sans-serif; background-color: #001233; color: #ffffff; scroll-behavior: smooth; }
         .bg-coral { background-color: #FF7F50; }
+        .text-coral { color: #FF7F50; }
         .bg-honey { background-color: #FFD700; }
-        .glass { background: rgba(255, 255, 255, 0.8); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
-        .card-shadow { box-shadow: 0 10px 15px -3px rgba(255, 127, 80, 0.1), 0 4px 6px -2px rgba(255, 127, 80, 0.05); }
-        .hero-gradient { background: linear-gradient(135deg, #002366 0%, #FF7F50 100%); }
-        .glow { filter: drop-shadow(0 0 10px #FFD700); }
+        .text-honey { color: #FFD700; }
+        .glass { background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(12px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .card-hover:hover { transform: translateY(-10px); transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275); box-shadow: 0 25px 50px -12px rgba(255, 127, 80, 0.3); }
+        .hero-gradient { background: radial-gradient(circle at top right, #002366, #001233); }
+        .btn-glow:hover { box-shadow: 0 0 20px #FF7F50; }
     </style>
 </head>
 <body>
 
-    <nav class="fixed w-full z-50 glass py-4 px-6 flex justify-between items-center border-b">
-        <div class="text-2xl font-black tracking-tighter uppercase italic text-royal">Aggy<span class="text-coral">Bitez</span></div>
-        <a href="https://wa.me/2347011954625" class="bg-coral text-white px-6 py-2 rounded-full font-bold text-xs uppercase shadow-lg shadow-coral/30">Order Now</a>
+    <a href="https://wa.me/2347011954625" class="fixed bottom-6 right-6 z-50 bg-[#25D366] p-4 rounded-full shadow-2xl hover:scale-110 transition duration-300">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-8 h-8" alt="Order">
+    </a>
+
+    <nav class="fixed w-full z-40 glass py-4 px-6 flex justify-between items-center border-b border-white/10">
+        <div class="text-2xl font-black italic uppercase tracking-tighter">Aggy<span class="text-coral">Bitez</span></div>
+        <a href="https://wa.me/2347011954625" class="bg-coral text-white px-6 py-2 rounded-full font-bold text-xs uppercase btn-glow transition tracking-widest">Order Now</a>
     </nav>
 
-    <section class="h-screen flex flex-col justify-center items-center text-center px-6 hero-gradient text-white relative overflow-hidden">
-        <div class="absolute w-full h-full opacity-10 bg-[url('https://www.transparenttextures.com/patterns/cubes.png')]"></div>
+    <section class="h-screen flex flex-col justify-center items-center text-center px-6 hero-gradient relative overflow-hidden">
+        <div class="absolute w-full h-full opacity-5 bg-[url('https://www.transparenttextures.com/patterns/carbon-fibre.png')]"></div>
         <div class="relative z-10">
-            <span class="bg-honey text-black px-4 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.2em] glow">The All-Day Plug</span>
-            <h1 class="text-6xl md:text-8xl font-black mt-6 mb-4 tracking-tighter italic">SWEET. MIGHTY. <br> <span class="text-honey">ELEGANT.</span></h1>
-            <p class="max-w-xl mx-auto text-blue-100 mb-8 text-lg font-medium">Afternoon Pickups or Late-Night Delivery. Premium FUW Dining.</p>
+            <span class="bg-honey text-black px-5 py-1 rounded-full text-[10px] font-black uppercase tracking-[0.3em] mb-6 inline-block shadow-lg">The SBM Movement</span>
+            <h1 class="text-6xl md:text-9xl font-black mb-4 tracking-tighter italic uppercase leading-none">Sweet.<br>Mighty.<br><span class="text-honey">Elegant.</span></h1>
+            <p class="max-w-xl mx-auto text-blue-200 mb-10 text-lg font-light italic tracking-wide">Premium Afternoon & Late-Night Dining.</p>
+            <a href="#menu" class="bg-white text-[#001233] px-12 py-4 rounded-full font-black uppercase tracking-widest hover:bg-honey transition-all duration-300">View The Menu</a>
         </div>
     </section>
 
-    <section id="delivery" class="py-16 px-6 max-w-6xl mx-auto -mt-16 relative z-20">
-        <div class="grid md:grid-cols-2 gap-6">
-            <div class="bg-white p-8 rounded-3xl card-shadow border-t-8 border-honey hover:scale-105 transition">
-                <h3 class="text-2xl font-black mb-2 flex items-center gap-3">📍 FREE Pickups</h3>
-                <p class="text-gray-500">Order afternoon or evening. Collect at base. Hot, fresh, and zero extra charge.</p>
+    <section class="py-16 px-6 max-w-6xl mx-auto -mt-24 relative z-20">
+        <div class="grid md:grid-cols-2 gap-8">
+            <div class="glass p-10 rounded-[3rem] border-b-8 border-honey">
+                <div class="text-4xl mb-4">📍</div>
+                <h3 class="text-2xl font-black mb-2 text-honey uppercase italic">Free Pickup</h3>
+                <p class="text-gray-400 font-medium text-sm leading-relaxed">Order afternoon or evening. Collect your fuel at base. Zero extra charges.</p>
             </div>
-            <div class="bg-white p-8 rounded-3xl card-shadow border-t-8 border-coral hover:scale-105 transition">
-                <h3 class="text-2xl font-black mb-2 flex items-center gap-3">🚚 FAST Delivery</h3>
-                <p class="text-gray-500">We deliver to your hostel gate. Fee depends on your FUW location. Small But Mighty speed.</p>
+            <div class="glass p-10 rounded-[3rem] border-b-8 border-coral">
+                <div class="text-4xl mb-4">🚚</div>
+                <h3 class="text-2xl font-black mb-2 text-coral uppercase italic">Fast Delivery</h3>
+                <p class="text-gray-400 font-medium text-sm leading-relaxed">We deliver straight to your gate. Fee depends on your campus location.</p>
             </div>
         </div>
     </section>
 
-    <section id="menu" class="py-20 px-6 max-w-7xl mx-auto">
-        <h2 class="text-4xl font-black mb-12 text-center text-royal uppercase italic tracking-widest">The <span class="text-coral">Signature</span> Lineup</h2>
+    <section id="menu" class="py-32 px-6 max-w-7xl mx-auto">
+        <div class="text-center mb-20">
+            <h2 class="text-4xl md:text-6xl font-black uppercase italic tracking-widest text-white">The <span class="text-coral underline decoration-honey underline-offset-8">Signature</span> Lineup</h2>
+        </div>
         
-        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-12">
             
-            <div class="bg-white rounded-3xl overflow-hidden card-shadow group border border-gray-100">
-                <div class="h-64 bg-gray-200 overflow-hidden">
-                    <img src="noodle_special.png" alt="Special Noodles" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                </div>
+            <div class="glass rounded-[2.5rem] overflow-hidden card-hover border border-white/5">
+                <div class="h-72 bg-gray-900"><img src="https://images.unsplash.com/photo-1585032226651-759b368d7246?q=80&w=1000" class="w-full h-full object-cover"></div>
                 <div class="p-8">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-black text-xl uppercase text-royal">Special Noodles</h3>
-                        <span class="text-coral font-black text-lg">₦5,000</span>
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-black text-xl uppercase tracking-tight">Special Noodles</h3>
+                        <span class="text-honey font-black text-xl">₦5,000</span>
                     </div>
-                    <p class="text-gray-500 text-sm mb-6">Signature Stir-Fry + Vegetable Omelet + Chicken Chunks.</p>
-                    <a href="https://wa.me/2347011954625?text=Hello%20AggyBitez!%20I%20want%20the%20Special%20Noodles" class="block text-center bg-royal text-white py-3 rounded-xl font-bold hover:bg-coral transition">Add to Order</a>
+                    <p class="text-gray-400 text-xs mb-8 uppercase tracking-widest font-bold">Veggies • Chicken • Omelet • Sausage</p>
+                    <a href="https://wa.me/2347011954625?text=I%20want%20the%20Special%20Noodles" class="block text-center bg-coral text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs btn-glow transition">Order Special</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-3xl overflow-hidden card-shadow group border border-gray-100">
-                <div class="h-64 bg-gray-200 overflow-hidden">
-                    <img src="waffle_classic.png" alt="Classic Waffles" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                </div>
+            <div class="glass rounded-[2.5rem] overflow-hidden card-hover border-2 border-honey relative">
+                <span class="absolute top-6 right-6 bg-honey text-black px-4 py-1 rounded-full text-[10px] font-black uppercase z-10 shadow-xl">Elite Choice</span>
+                <div class="h-72 bg-gray-800"><img src="https://images.unsplash.com/photo-1573539079551-3400c11c760f?q=80&w=1000" class="w-full h-full object-cover"></div>
                 <div class="p-8">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-black text-xl uppercase text-royal">Classic Waffles</h3>
-                        <span class="text-coral font-black text-lg">₦4,000</span>
+                    <div class="flex justify-between items-center mb-3">
+                        <h3 class="font-black text-xl uppercase text-honey">Premium Feast</h3>
+                        <span class="text-white font-black text-xl">₦6,000</span>
                     </div>
-                    <p class="text-gray-500 text-sm mb-6">Golden fluffy waffles drizzled in syrup and fresh toppings.</p>
-                    <a href="https://wa.me/2347011954625?text=Hello%20AggyBitez!%20I%20want%20the%20Classic%20Waffles" class="block text-center bg-royal text-white py-3 rounded-xl font-bold hover:bg-coral transition">Add to Order</a>
+                    <p class="text-gray-400 text-xs mb-8 uppercase tracking-widest font-bold">Waffles • 2 Sausages • 2 Eggs • Juice</p>
+                    <a href="https://wa.me/2347011954625?text=I%20want%20to%20secure%20the%20Premium%20Feast" class="block text-center bg-honey text-black py-4 rounded-2xl font-black uppercase tracking-widest text-xs transition">Secure The Feast</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-3xl overflow-hidden card-shadow border-2 border-honey group relative">
-                <span class="absolute top-4 right-4 bg-honey text-black px-3 py-1 rounded-full text-[10px] font-black uppercase z-10">Elite choice</span>
-                <div class="h-64 bg-gray-200 overflow-hidden relative flex items-center justify-center text-4xl">👑</div>
+            <div class="glass rounded-[2.5rem] overflow-hidden card-hover">
+                <div class="h-72 bg-gray-900"><img src="https://images.pexels.com/photos/376464/pexels-photo-376464.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" class="w-full h-full object-cover"></div>
                 <div class="p-8">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-black text-xl uppercase text-royal">Premium Feast</h3>
-                        <span class="text-coral font-black text-lg">₦6,000</span>
+                    <div class="flex justify-between items-center mb-3 text-white">
+                        <h3 class="font-black text-xl uppercase">Classic Waffles</h3>
+                        <span class="text-honey font-black text-xl">₦4,000</span>
                     </div>
-                    <p class="text-gray-500 text-sm mb-6">Loaded Platter: Waffles + Sausage + Fried Eggs + Extra Sides + Drink.</p>
-                    <a href="https://wa.me/2347011954625?text=Hello%20AggyBitez!%20I%20want%20to%20secure%20the%20Premium%20Feast" class="block text-center bg-honey text-black py-3 rounded-xl font-black hover:scale-105 transition">Secure the Feast</a>
+                    <p class="text-gray-400 text-xs mb-8 uppercase tracking-widest font-bold">Fluffy Waffles • Syrup • Fruit Toppings</p>
+                    <a href="https://wa.me/2347011954625?text=I%20want%20Classic%20Waffles" class="block text-center bg-coral text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs btn-glow transition">Order Waffles</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-3xl overflow-hidden card-shadow group border border-gray-100">
-                <div class="h-64 bg-gray-200 overflow-hidden text-4xl flex items-center justify-center">🍔</div>
+            <div class="glass rounded-[2.5rem] overflow-hidden card-hover">
+                <div class="h-72 bg-gray-900"><img src="https://images.unsplash.com/photo-1561651823-34feb02250e4?q=80&w=1000" class="w-full h-full object-cover"></div>
                 <div class="p-8">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-black text-xl uppercase text-royal">SBM Burger</h3>
-                        <span class="text-coral font-black text-lg">₦4,000</span>
+                    <div class="flex justify-between items-center mb-3 text-white">
+                        <h3 class="font-black text-xl uppercase">Mega Shawarma</h3>
+                        <span class="text-honey font-black text-xl">₦4,000</span>
                     </div>
-                    <p class="text-gray-500 text-sm mb-6">Gourmet beef patty, signature sauce, and melted cheddar cheese.</p>
-                    <a href="https://wa.me/2347011954625?text=Hello%20AggyBitez!%20I%20want%20the%20SBM%20Burger" class="block text-center bg-royal text-white py-3 rounded-xl font-bold hover:bg-coral transition">Add to Order</a>
+                    <p class="text-gray-400 text-xs mb-8 uppercase tracking-widest font-bold">Chicken • Double Sausage • Ultra Creamy</p>
+                    <a href="https://wa.me/2347011954625?text=I%20want%20the%20Mega%20Shawarma" class="block text-center bg-coral text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs btn-glow transition">Order Mega</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-3xl overflow-hidden card-shadow group border border-gray-100">
-                <div class="h-64 bg-gray-200 overflow-hidden">
-                    <img src="pancake_stack.png" alt="Pancake Stack" class="w-full h-full object-cover group-hover:scale-110 transition duration-500">
-                </div>
+            <div class="glass rounded-[2.5rem] overflow-hidden card-hover">
+                <div class="h-72 bg-gray-900"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1000" class="w-full h-full object-cover"></div>
                 <div class="p-8">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-black text-xl uppercase text-royal">Pancake Stack</h3>
-                        <span class="text-coral font-black text-lg">₦3,000</span>
+                    <div class="flex justify-between items-center mb-3 text-white">
+                        <h3 class="font-black text-xl uppercase">SBM Burger</h3>
+                        <span class="text-honey font-black text-xl">₦3,500</span>
                     </div>
-                    <p class="text-gray-500 text-sm mb-6">4-stack golden pancakes served with syrup and butter.</p>
-                    <a href="https://wa.me/2347011954625?text=Hello%20AggyBitez!%20I%20want%20the%20Pancake%20Stack" class="block text-center bg-royal text-white py-3 rounded-xl font-bold hover:bg-coral transition">Add to Order</a>
+                    <p class="text-gray-400 text-xs mb-8 uppercase tracking-widest font-bold">Beef Patty • Cheese • Secret Sauce</p>
+                    <a href="https://wa.me/2347011954625?text=I%20want%20the%20SBM%20Burger" class="block text-center bg-coral text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs btn-glow transition">Order Burger</a>
                 </div>
             </div>
 
-            <div class="bg-white rounded-3xl overflow-hidden card-shadow group border border-gray-100 relative">
-                <div class="h-64 bg-gray-200 overflow-hidden text-4xl flex items-center justify-center">🌯</div>
+            <div class="glass rounded-[2.5rem] overflow-hidden card-hover">
+                <div class="h-72 bg-gray-900"><img src="https://images.unsplash.com/photo-1601050690597-df056fb04791?q=80&w=1000" class="w-full h-full object-cover"></div>
                 <div class="p-8">
-                    <div class="flex justify-between items-center mb-2">
-                        <h3 class="font-black text-xl uppercase text-royal">Mega Shawarma</h3>
-                        <span class="text-coral font-black text-lg">₦4,000</span>
+                    <div class="flex justify-between items-center mb-3 text-white">
+                        <h3 class="font-black text-xl uppercase">Small Chops Box</h3>
+                        <span class="text-honey font-black text-xl">₦3,500</span>
                     </div>
-                    <p class="text-gray-500 text-sm mb-6">Creamy, double sausage, chicken filling with a spicy kick.</p>
-                    <a href="https://wa.me/2347011954625?text=Hello%20AggyBitez!%20I%20want%20the%20Mega%20Shawarma" class="block text-center bg-royal text-white py-3 rounded-xl font-bold hover:bg-coral transition">Add to Order</a>
+                    <p class="text-gray-400 text-xs mb-8 uppercase tracking-widest font-bold">Springrolls • Samosa • Puff-Puff • Meat</p>
+                    <a href="https://wa.me/2347011954625?text=I%20want%20the%20Small%20Chops%20Box" class="block text-center bg-coral text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs btn-glow transition">Order Platter</a>
+                </div>
+            </div>
+
+            <div class="glass rounded-[2.5rem] overflow-hidden card-hover">
+                <div class="h-72 bg-gray-900"><img src="https://img.freepik.com/free-photo/delicious-noodles-plate_23-2150772023.jpg" class="w-full h-full object-cover"></div>
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-3 text-white">
+                        <h3 class="font-black text-xl uppercase">Normal Noodles</h3>
+                        <span class="text-honey font-black text-xl">₦3,000</span>
+                    </div>
+                    <p class="text-gray-400 text-xs mb-8 uppercase tracking-widest font-bold">Aggy Spiced + 1 Fried Egg</p>
+                    <a href="https://wa.me/2347011954625?text=I%20want%20Normal%20Noodles" class="block text-center bg-coral text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs btn-glow transition">Order Classic</a>
+                </div>
+            </div>
+
+            <div class="glass rounded-[2.5rem] overflow-hidden card-hover">
+                <div class="h-72 bg-gray-900"><img src="https://images.unsplash.com/photo-1528207776546-365bb710ee93?q=80&w=1000" class="w-full h-full object-cover"></div>
+                <div class="p-8">
+                    <div class="flex justify-between items-center mb-3 text-white">
+                        <h3 class="font-black text-xl uppercase">Pancake Stack</h3>
+                        <span class="text-honey font-black text-xl">₦3,000</span>
+                    </div>
+                    <p class="text-gray-400 text-xs mb-8 uppercase tracking-widest font-bold">4-Stack Fluffy • Syrup • Butter</p>
+                    <a href="https://wa.me/2347011954625?text=I%20want%20the%20Pancake%20Stack" class="block text-center bg-coral text-white py-4 rounded-2xl font-black uppercase tracking-widest text-xs btn-glow transition">Order Pancakes</a>
                 </div>
             </div>
 
         </div>
     </section>
 
-    <footer class="bg-royal py-16 px-6 text-center text-white">
-        <div class="text-3xl font-black italic uppercase mb-4">Aggy<span class="text-coral">Bitez</span></div>
-        <p class="text-blue-100 text-sm mb-8">Serving FUW with Excellence. All-Day Dining.</p>
-        <p class="mt-8 text-[10px] text-blue-300 opacity-50 uppercase font-black tracking-widest">© 2026 AggyBitez. Small But Mighty.</p>
+    <footer class="py-24 text-center glass border-t border-white/10">
+        <div class="text-3xl font-black uppercase italic mb-4">Aggy<span class="text-coral">Bitez</span></div>
+        <p class="text-blue-300 text-[10px] mb-10 tracking-[0.4em] uppercase font-bold">Small But Mighty • FUW</p>
+        <p class="mt-16 text-[9px] text-gray-500 uppercase tracking-[0.6em] font-black opacity-20">© 2026 AggyBitez SBM. All Rights Reserved.</p>
     </footer>
 
 </body>
 </html>
-
